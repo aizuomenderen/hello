@@ -1,0 +1,247 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+.wjs_top .row div {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.wjs_top .row div a.phone_code {
+  position: relative;
+}
+.wjs_top .row div:hover > img {
+  display: block;
+}
+.wjs_top .row div a {
+  color: #808080;
+}
+.wjs_top .row div a.btn-danger {
+  color: #fff;
+}
+.wjs_top .row div > div:last-child {
+  border-right: none;
+}
+.wjs_nav nav {
+  margin-bottom: 0;
+}
+.wjs_nav .navbar-header a.navbar-brand {
+  padding-top: 7px;
+  font-size: 70px;
+  height: 80px;
+}
+.wjs_nav .navbar-header a.navbar-brand span.wjsfont-logo {
+  color: red;
+}
+.wjs_nav .navbar-nav a {
+  height: 80px;
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.wjs_nav .navbar-nav a:hover,
+.wjs_nav .navbar-nav a:focus {
+  /* focus 获得焦点 */
+  border-bottom: 1px solid red;
+}
+.wjs_carousel img {
+  width: 100%;
+}
+.wjs_exchange {
+  padding: 70px 0 40px;
+}
+.wjs_exchange .row div {
+  margin-bottom: 30px;
+}
+.wjs_exchange .row a {
+  color: #808080;
+}
+.wjs_exchange .row a:hover {
+  color: red;
+}
+.wjs_exchange .row a .media-left {
+  font-size: 40px;
+}
+.wjs_exchange .row a .media-body {
+  font-size: 14px;
+}
+.wjs_waitting {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 15px;
+  padding: 40px 0 30px;
+}
+.wjs_waitting .pull-left a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.wjs_buy a.cart_default {
+  position: relative;
+  padding-right: 80px;
+  display: block;
+  background-color: #f7f7f7;
+  color: #808080;
+  box-shadow: 0 0 5px 0px #000;
+}
+.wjs_buy a.cart_default .cart_content {
+  border-right: 1px dashed #000;
+  padding: 0 10px;
+}
+.wjs_buy a.cart_default .cart_content .content_title h4 {
+  text-align: center;
+  padding-top: 25px;
+}
+.wjs_buy a.cart_default .cart_rate {
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 60px;
+}
+.wjs_buy a.cart_default .cart_rate::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 1px 0px #000;
+}
+.wjs_buy a.cart_default .cart_rate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  box-shadow: 0px -1px 1px 0px #000;
+}
+.wjs_buy a.cart_exp {
+  background-color: red;
+  color: #fff;
+}
+.wjs_buy a.cart_exp .cart_content {
+  border-right: 1px dashed #fff;
+}
+.wjs_buy a.cart_exp .wjsfont {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 40px;
+}
+.wjs_buy a.cart_progress .cart_content .content_info > div {
+  width: 50%;
+}
+.wjs_buy a.cart_progress .cart_rate .wjs_tips span:nth-child(1) {
+  color: green;
+  border: 1px solid green;
+}
+.wjs_buy a.cart_progress .cart_rate .wjs_tips span:nth-of-type(2) {
+  color: red;
+  border: 1px solid red;
+}
+.wjs_footer {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #000;
+}
+.wjs_footer div a {
+  color: #808080;
+  margin-left: 20px;
+}
+.wjs_footer div a:hover {
+  color: pink;
+}
+.wjs_footer div a span {
+  font-size: 80px;
+}
+/*# sourceMappingURL=./index.css.map */

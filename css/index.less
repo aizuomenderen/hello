@@ -1,0 +1,219 @@
+@import "./wjsfont.less";
+@fontColor: #808080;
+.wjs_view {}
+
+// 头部
+.wjs_top {
+    .row {
+        div {
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            a.phone_code {
+                position: relative;
+            }
+            &:hover>img {
+                display: block;
+            }
+            a {
+                color: @fontColor;
+            }
+            a.btn-danger {
+                color: #fff;
+            }
+            >div:last-child {
+                border-right: none;
+            }
+        }
+    }
+}
+
+// 导航条
+.wjs_nav {
+    nav {
+        margin-bottom: 0; //因为有默认的边距
+    }
+    .navbar-header {
+        a.navbar-brand {
+            padding-top: 7px;
+            font-size: 70px;
+            height: 80px;
+            span.wjsfont-logo {
+                color: red;
+            }
+        }
+    }
+    .navbar-nav {
+        a {
+            height: 80px;
+            line-height: 80px; // 因为框架上面自动加了上下左右的padding.所以要手动去除才能居中
+            padding-top: 0;
+            padding-bottom: 0;
+            &:hover,
+            &:focus {
+                /* focus 获得焦点 */
+                border-bottom: 1px solid red;
+            }
+        }
+    }
+}
+
+// 轮播图
+.wjs_carousel {
+    img {
+        width: 100%;
+    }
+}
+
+// 交易保障
+.wjs_exchange {
+    padding: 70px 0 40px;
+    .row {
+        div {
+            margin-bottom: 30px; //用外边距来撑开盒子
+            // padding-bottom: 30px;如果是padding的话，一共就有60px
+        }
+        a {
+            color: @fontColor;
+            &:hover {
+                color: red;
+            }
+            .media-left {
+                font-size: 40px;
+            }
+            .media-body {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// 立即预约
+.wjs_waitting {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000; // height: 87px;
+    font-size: 15px; // line-height: 85px; //因为占了2个像素的边框
+    padding: 40px 0 30px; //这个可以代替height和 line-height
+    .pull-left {
+        a {
+            color: red;
+            border-bottom: 1px dashed red;
+        }
+    }
+    .pull-right {}
+}
+
+// 新手体验
+.wjs_buy {
+    a.cart_default {
+        position: relative;
+        padding-right: 80px;
+        display: block; //让a标签转换为块级元素
+        background-color: #f7f7f7;
+        color: @fontColor;
+        box-shadow: 0 0 5px 0px #000; // padding-top: 5px;
+        .cart_content {
+            border-right: 1px dashed #000;
+            padding: 0 10px;
+            .content_title {
+                h4 {
+                    text-align: center;
+                    padding-top: 25px;
+                }
+            }
+        }
+        .cart_rate {
+            position: absolute;
+            width: 80px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            text-align: center;
+            padding-top: 60px;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #fff;
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -50%);
+                box-shadow: 0px 1px 1px 0px #000;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #fff;
+                bottom: 0;
+                left: 0;
+                transform: translate(-50%, 50%);
+                box-shadow: 0px -1px 1px 0px #000;
+            }
+        }
+    }
+    a.cart_exp {
+        background-color: red;
+        color: #fff;
+        .cart_content {
+            border-right: 1px dashed #fff;
+        }
+        .wjsfont {
+            top: 0;
+            left: 0;
+            position: absolute;
+            font-size: 40px;
+        }
+    }
+    a.cart_progress {
+        .cart_content {
+            .content_info {
+                >div {
+                    width: 50%;
+                }
+            }
+        }
+        .cart_rate {
+            .wjs_tips {
+                span:nth-child(1) {
+                    color: green;
+                    border: 1px solid green;
+                }
+                span:nth-of-type(2) {
+                    color: red;
+                    border: 1px solid red;
+                }
+            }
+        }
+    }
+}
+
+// 全部新闻
+.wjs_news {}
+
+// 底部
+.wjs_footer {
+    text-align: center;
+    padding-top:40px;
+    border-top:1px solid #000;
+    div{
+        a{
+            color: @fontColor;
+            margin-left: 20px;
+            &:hover{
+                color: pink;
+            }
+            span{
+                font-size: 80px
+            }
+        }
+    }  
+}
